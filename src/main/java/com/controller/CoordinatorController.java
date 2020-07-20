@@ -4,8 +4,8 @@ import java.util.List;
 
 import com.Initializer.Initializer;
 import com.Initializer.InitializerImpl;
-import com.message.MessageCollector;
-import com.message.MessageCollectorImpl;
+import com.message.MessagesCollector;
+import com.message.MessagesCollectorImpl;
 
 public class CoordinatorController {
 	
@@ -16,7 +16,7 @@ public class CoordinatorController {
 	public List<String> getMessages() {
 		List<String> ret = new ArrayList<String>();
 		Initializer initializer = new InitializerImpl();
-		MessageCollector messageCollector = new MessageCollectorImpl();
+		MessagesCollector messageCollector = new MessagesCollectorImpl();
 		ret = messageCollector.getMessages(initializer.getInstance());
 		for(String msg : ret) {
 			System.out.println(msg);
