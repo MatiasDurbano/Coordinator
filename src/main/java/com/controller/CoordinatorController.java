@@ -9,15 +9,18 @@ import com.message.MessagesCollectorImpl;
 
 public class CoordinatorController {
 	
+	private Initializer initializer ;
+	private MessagesCollector messageCollector;
 	
+	public CoordinatorController() {
+		this.initializer	= new InitializerImpl();
+		this.messageCollector = new MessagesCollectorImpl();
 		
-	public CoordinatorController() {}
+	}
 	
 	public List<String> getMessages() {
 		List<String> ret = new ArrayList<String>();
-		Initializer initializer = new InitializerImpl();
-		MessagesCollector messageCollector = new MessagesCollectorImpl();
-		ret = messageCollector.getMessages(initializer.getInstance());
+		ret = this.messageCollector.getMessages(this.initializer.getInstance());
 		return ret;
 	}
 }
