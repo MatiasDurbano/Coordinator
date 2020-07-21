@@ -18,9 +18,6 @@ public class CoordinatorController {
 		Initializer initializer = new InitializerImpl();
 		MessagesCollector messageCollector = new MessagesCollectorImpl();
 		ret = messageCollector.getMessages(initializer.getInstance());
-		for(String msg : ret) {
-			System.out.println(msg);
-		}
-		return null;
+		return ret;
 	}
 }
