@@ -7,8 +7,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import com.Initializer.Initializer;
-import com.Initializer.InitializerImpl;
+import com.initializer.Initializer;
+import com.initializer.InitializerImpl;
 import com.message.MessagesCollector;
 import com.message.MessagesCollectorImpl;
 

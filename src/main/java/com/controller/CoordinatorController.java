@@ -2,8 +2,8 @@ package com.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.Initializer.Initializer;
-import com.Initializer.InitializerImpl;
+import com.initializer.Initializer;
+import com.initializer.InitializerImpl;
 import com.message.MessagesCollector;
 import com.message.MessagesCollectorImpl;
 
