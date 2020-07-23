@@ -2,10 +2,10 @@ package com.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.collector.MessagesCollector;
+import com.collector.MessagesCollectorImpl;
 import com.initializer.Initializer;
 import com.initializer.InitializerImpl;
-import com.message.MessagesCollector;
-import com.message.MessagesCollectorImpl;
 
 public class CoordinatorController {
 	
