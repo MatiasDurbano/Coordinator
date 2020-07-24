@@ -18,10 +18,8 @@ class Test3 {
 		Initializer initializer = new InitializerImpl();
 		MessagesCollector collector = new MessagesCollectorImpl();
 		List<String> ret = collector.getMessages(initializer.getInstance());
-		
-		for(String str: ret) {
-			assertTrue(str.equals("empanada de pollo - prueba de api"));
-		}
+		assertTrue(ret.size() == 1);
+		assertTrue(ret.get(0).equals("empanada de pollo - prueba de api"));
 		
 	}
 
